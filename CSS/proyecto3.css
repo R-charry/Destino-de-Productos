@@ -126,14 +126,15 @@ a {
 }
 
 #cards {
-  display: flex;
   position: relative;
-  flex-direction: row;
+  justify-content: space-between;
   top: 275px;
 }
 
 #cards,
 p {
+  
+  
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -165,4 +166,27 @@ button {
   margin: 15px 0px;
   padding: 0px 20px;
   font-family: "Lato", sans-serif;
+}
+.flexcard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+@media (max-width:480px){
+       
+
+  #card{ width: 100%;
+   margin:15px 0;
+   padding:0;
+   
+   
+    
+  }
+  #cards{
+    width: 100vh;
+    margin:0;
+    padding: 15px 0;
+    
+  }
 }
